@@ -10,7 +10,6 @@ public class TankMovement : MonoBehaviour
     public Transform shootPoint;
     public GameObject Bullet;
     public float fireRate = 1f;
-    private float nextFireTime = 0f;
 
     Vector2 MoveInput; //lets the script know it needs to use the input  
     Vector2 LookInput;
@@ -29,7 +28,6 @@ public class TankMovement : MonoBehaviour
     {
         Walk();
         Rotate();
-        //Shoot();
     }
 
     public void OnMove(InputValue value)
@@ -42,9 +40,9 @@ public class TankMovement : MonoBehaviour
         LookInput = value.Get<Vector2>();    
     }
 
-    public void OnShoot(InputValue Button)
+    public void OnAttack(InputValue value)
     {
-        AttackInput = Button.Get<Vector2>();
+        Shoot();
     }
 
     private void Walk() 
@@ -63,10 +61,14 @@ public class TankMovement : MonoBehaviour
         }
     }
 
-    private void Shoot(InputValue button) 
+    private void Shoot() 
     {
-        GameObject projectileClone = Instantiate(Bullet, shootPoint.position, Quaternion.Euler(0, 0, 90));
-        nextFireTime = Time.time + fireRate;
+        if(MoveInput.y == 0f)
+        {
+            GameObject projectileClone = Instantiate(Bullet, shootPoint.position, Quaternion.Euler(0, 0, 90));
+            Rigidbody rb = projectileClone.GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * fireRate);
+        }
     }
 
 }

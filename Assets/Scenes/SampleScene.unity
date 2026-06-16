@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 1083628473}
   Bullet: {fileID: 5318811408953421416, guid: e40083d90a0d90642a2f7d08747e8ba8, type: 3}
-  fireRate: 100
+  fireRate: 1000
   moveSpeed: 20
   RotationSpeed: 100
 --- !u!1001 &8155645770116288129
@@ -1144,6 +1144,10 @@ PrefabInstance:
     - target: {fileID: 4127616535609555504, guid: d4e1c5f47c4e36e49bd893594654654c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194580277068418188, guid: d4e1c5f47c4e36e49bd893594654654c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8354468409794505788, guid: d4e1c5f47c4e36e49bd893594654654c, type: 3}
       propertyPath: m_Name
