@@ -6,4 +6,12 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject, 3f);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

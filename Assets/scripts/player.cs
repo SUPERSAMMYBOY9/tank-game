@@ -62,14 +62,10 @@ public class TankMovement : MonoBehaviour
     }
 
     private void Shoot() 
-    {
-        if(MoveInput.y == 0f)
-        {
-            GameObject projectileClone = Instantiate(Bullet, shootPoint.position, Quaternion.Euler(0, 0, 90));
-            Rigidbody rb = projectileClone.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * fireRate);
-        }
+    {       
+        GameObject projectileClone = Instantiate(Bullet, shootPoint.position, Quaternion.Euler(0, 0, 90));
+        Rigidbody rb = projectileClone.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * fireRate);
     }
-
 }
 
