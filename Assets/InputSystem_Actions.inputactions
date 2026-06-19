@@ -88,10 +88,10 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "turret",
+                    "name": "Aim",
                     "type": "Value",
-                    "id": "0ee99e29-374c-491e-8eb8-16454f65d903",
-                    "expectedControlType": "Vector2",
+                    "id": "4661ebe9-6873-42a2-8e25-ac3d3446e9cc",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -506,15 +506,37 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "30732f46-b4de-47df-887d-3806844d9cbf",
-                    "path": "<Gamepad>/rightStick",
+                    "name": "1D Axis",
+                    "id": "8bef8f3e-c0b0-4010-a5d1-02b40e092892",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "turret",
-                    "isComposite": false,
+                    "action": "Aim",
+                    "isComposite": true,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "1cc62687-fc7e-434b-ad59-17b838f63108",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1b345ed3-3e7d-4595-9678-fcaee353c35a",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },

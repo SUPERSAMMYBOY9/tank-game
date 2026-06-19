@@ -1,4 +1,5 @@
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.Rendering.DebugUI;
@@ -13,7 +14,8 @@ public class TankMovement : MonoBehaviour
 
     Vector2 MoveInput; //lets the script know it needs to use the input  
     Vector2 LookInput;
-    Vector2 AttackInput;
+    Vector2 TurretInput;
+
 
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float RotationSpeed = 50f; //makes a variable that can be changed in the edditor 
@@ -43,6 +45,11 @@ public class TankMovement : MonoBehaviour
     public void OnAttack(InputValue value)
     {
         Shoot();
+    }
+
+    public void OnTurret(InputValue value) 
+    {
+        TurretInput = value.Get<Vector2>();
     }
 
     private void Walk() 

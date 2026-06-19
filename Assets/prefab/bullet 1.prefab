@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5318811408953421416
+--- !u!1 &3820551459099517168
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6431282373768887355}
-  - component: {fileID: 5915381118226843149}
-  - component: {fileID: 7738020461835835823}
-  - component: {fileID: 6028921342993984210}
-  - component: {fileID: 9189393065765967268}
-  - component: {fileID: 4612452088052084539}
+  - component: {fileID: 3105637746055763384}
+  - component: {fileID: 4733962750668795756}
+  - component: {fileID: 2736533977776849205}
+  - component: {fileID: 4584053779954084912}
+  - component: {fileID: 6054258598419401474}
+  - component: {fileID: 57822570126754775}
   m_Layer: 0
-  m_Name: bullet
+  m_Name: bullet 1
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6431282373768887355
+--- !u!4 &3105637746055763384
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318811408953421416}
+  m_GameObject: {fileID: 3820551459099517168}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 366.14, y: 4.61, z: 358.31}
-  m_LocalScale: {x: 0.35656, y: 0.35656, z: 0.35656}
+  m_LocalRotation: {x: 0.5630969, y: 0.42769372, z: -0.4276936, w: 0.5630969}
+  m_LocalPosition: {x: 329.48007, y: 1.308, z: 343.69504}
+  m_LocalScale: {x: 0.08173425, y: 0.08173425, z: 0.08173425}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!33 &5915381118226843149
+  m_LocalEulerAnglesHint: {x: 89.972, y: 0, z: -74.436}
+--- !u!33 &4733962750668795756
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318811408953421416}
+  m_GameObject: {fileID: 3820551459099517168}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7738020461835835823
+--- !u!23 &2736533977776849205
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318811408953421416}
+  m_GameObject: {fileID: 3820551459099517168}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -89,13 +89,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6028921342993984210
+--- !u!136 &4584053779954084912
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318811408953421416}
+  m_GameObject: {fileID: 3820551459099517168}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -112,13 +112,13 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &9189393065765967268
+--- !u!54 &6054258598419401474
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318811408953421416}
+  m_GameObject: {fileID: 3820551459099517168}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -139,13 +139,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4612452088052084539
+--- !u!114 &57822570126754775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318811408953421416}
+  m_GameObject: {fileID: 3820551459099517168}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc3a27e462b848041a80e0725539303e, type: 3}
