@@ -31,8 +31,7 @@ Transform:
   m_LocalPosition: {x: 0.02, y: 0.13282198, z: 0.855}
   m_LocalScale: {x: 0.42502972, y: 0.34260204, z: 0.7813045}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8194580277068418188}
+  m_Children: []
   m_Father: {fileID: 1917592179956259877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &605284468994585061
@@ -134,11 +133,11 @@ Transform:
   m_GameObject: {fileID: 7714372104638326459}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.03, z: 0.574}
-  m_LocalScale: {x: 1.0549412, y: 1.3087529, z: 0.57388806}
+  m_LocalPosition: {x: 0.02, y: 0.122544006, z: 1.51}
+  m_LocalScale: {x: 0.44838133, y: 0.44838136, z: 0.4483813}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3664789605321758896}
+  m_Father: {fileID: 1917592179956259877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8354468409794505788
 GameObject:
@@ -352,6 +351,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4661ebe9-6873-42a2-8e25-ac3d3446e9cc
+    m_ActionName: 'Player/Aim[/XInputControllerWindows/rightStick/left,/XInputControllerWindows/rightStick/right]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
@@ -418,6 +421,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3664789605321758896}
+  - {fileID: 8194580277068418188}
   m_Father: {fileID: 4127616535609555504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3530854467806247449
@@ -506,4 +510,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f70ecd8788de646af4a38243db4721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turret: {fileID: 0}
   TurretSpeed: 1

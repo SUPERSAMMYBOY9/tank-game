@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,7 +21,12 @@ public class turret_script : MonoBehaviour
 
     void Update()
     {
-        AimTurret();
+       
+        if (transform.hasChanged ==  false)
+        {
+            AimTurret();
+        }
+       
     }
 
     private void AimTurret()
